@@ -1,0 +1,44 @@
+.hero{
+    margin-top:4rem;
+}
+.container-width{
+    max-width:91%;
+    margin:0 auto;
+}
+.hero .hero-img{
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+.hero .hero-img img{
+    width:100%;
+}
+.hero .hero-text{
+    margin-top:2.4rem;
+}
+.hero .hero-text h1{
+    font-family: 'New York Extra Large Bold';
+    font-size:2.25rem;
+    text-align: center;
+    line-height:1.3;
+}
+.hero .hero-text p{
+    margin-top:2rem;
+    font-family: 'SFMono';
+    text-align: center;
+}
+.hero-container hr{
+    margin-top:3.2rem;
+    border:1px solid #000;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+.articles-container{
+    margin-top:4.5rem;
+}
+.articles-container .articles__heading{
+    font-family: 'New York Extra Large Bold';
+    font-size:2.25rem;
+    text-align: center;
+    line-height:1.3;
+
+}
