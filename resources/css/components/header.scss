@@ -8,8 +8,9 @@ header{
 }
 
 .header-container{
-    max-width:91%;
-    margin:0 auto;
+
+    @include container-width;
+
     display:flex;
     justify-content: space-between;
     align-items: center;

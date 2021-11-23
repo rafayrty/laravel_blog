@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-    <x-header></x-header>
+<x-header></x-header>
 
-    <main>
-        
-        <div class="hero-container container-width">
+<main>
+
+    <div class="hero-container">
 
         <div class="hero">
             <div class="hero-img">
@@ -30,14 +30,81 @@
                 All articles
             </h1>
 
+            <div class="articles__list">
+
+                <div class="articles__list-article">
+                    <div class="articles__list-image">
+                        <img src="{{asset("images/article1.jpg")}}" alt="article-img">
+                    </div>
+                    <h1 class="articles__list-heading">
+                        Granny gives everyone the finger, and other tips from OFFF Barcelona
+                    </h1>
+
+                </div>
+
+                
+                <div class="articles__list-article">
+                    <div class="articles__list-image">
+                        <img src="{{asset("images/article2.jpg")}}" alt="article-img">
+                    </div>
+                    <h1 class="articles__list-heading">
+                        Hello world, or, in other words, why this blog exists
+                    </h1>
+
+                </div>
+
+                
+                <div class="articles__list-article">
+                    <div class="articles__list-image">
+                        <img src="{{asset("images/article3.jpg")}}" alt="article-img">
+                    </div>
+                    <h1 class="articles__list-heading">
+                        Here are some things you should know regarding how we work 
+                    </h1>
+
+                </div>
+
+                
+                <div class="articles__list-article">
+                    <div class="articles__list-image">
+                        <img src="{{asset("images/article4.jpg")}}" alt="article-img">
+                    </div>
+                    <h1 class="articles__list-heading">
+                        Updating list of 50+ sources on distributed teams, remote work, and how to make it all work better
+                    </h1>
+
+                </div>
+
+                
+                <div class="articles__list-article">
+                    <div class="articles__list-image">
+                        <img src="{{asset("images/article5.jpg")}}" alt="article-img">
+                    </div>
+                    <h1 class="articles__list-heading">
+                        A few words about this blog platform, Ghost, and how this site was made
+                    </h1>
+
+
+                </div>
+
+                
+                <div class="articles__list-article">
+                    <div class="articles__list-image">
+                        <img src="{{asset("images/article6.jpg")}}" alt="article-img">
+                    </div>
+                    <h1 class="articles__list-heading">
+                        How modern remote working tools get along with Old School Cowboy's methods
+                    </h1>
+
+                </div>
+
+            </div>
+
         </div>
     </div>
-   
-
-    </main>
 
 
+</main>
+
+<x-footer></x-footer>
 @endsection
-
-
-

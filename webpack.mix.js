@@ -17,8 +17,12 @@ mix.copy( 'resources/images', 'public/images' );
 
 
 mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css');
+    // .postCss('resources/css/app.css', 'public/css');
 
 mix.browserSync({
     proxy: '127.0.0.1:8000',
 });
+
+
+mix.sass('resources/css/app.scss', 'public/css')
+    // .sass('resources/sass/admin.sass', 'public/css/admin');

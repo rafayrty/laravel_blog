@@ -1,5 +1,11 @@
 {
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
-    "/images/img1.jpg": "/images/img1.jpg"
+    "/images/article1.jpg": "/images/article1.jpg",
+    "/images/img1.jpg": "/images/img1.jpg",
+    "/images/article2.jpg": "/images/article2.jpg",
+    "/images/article3.jpg": "/images/article3.jpg",
+    "/images/article4.jpg": "/images/article4.jpg",
+    "/images/article5.jpg": "/images/article5.jpg",
+    "/images/article6.jpg": "/images/article6.jpg"
 }
