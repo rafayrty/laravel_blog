@@ -20,9 +20,10 @@ A Blog that was built from complete scratch using laravel and for the frontend c
 ```
 npm install
 npm run dev
-composer update
-php artisan serve
 
+composer update
+
+php artisan serve
 ```
 
 ## Find Out More About Me
