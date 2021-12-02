@@ -598,7 +598,6 @@ header {
 footer {
   background: #000000;
   color: #fff;
-  overflow: hidden;
   margin-top: 6rem;
   position: relative;
   padding-top: 1rem;
@@ -608,25 +607,17 @@ footer h1 {
 }
 footer .footer-marquee {
   position: relative;
-  overflow: hidden;
-  --offset: 20vw;
-  --move-initial: calc(-25% + var(--offset));
-  --move-final: calc(-50% + var(--offset));
-}
-@media (min-width: 1024px) {
-  footer .footer-marquee {
-    --offset:1vw;
-  }
 }
 footer .footer-marquee ul {
-  width: 300vw;
+  position: absolute;
+  width: 400%;
+  overflow-x: auto;
   display: flex;
-  transform: translate3d(var(--move-initial), 0, 0);
-  -webkit-animation: marquee 5s linear infinite;
-          animation: marquee 5s linear infinite;
   margin: 0;
   padding: 0;
   list-style: none;
+  -webkit-animation: marquee forwards infinite 15s linear;
+          animation: marquee forwards infinite 15s linear;
 }
 footer .footer-marquee ul li {
   font-family: "SF Pro Text";
@@ -637,6 +628,11 @@ footer .footer-marquee ul li {
 @media (min-width: 1024px) {
   footer .footer-marquee ul li {
     font-size: 1.6vw;
+  }
+}
+@media (min-width: 1024px) {
+  footer .footer-marquee ul li {
+    font-size: 1.1vw;
   }
 }
 footer .footer-marquee ul li strong {
@@ -728,19 +724,19 @@ footer .footer-container .footer__credits p {
 
 @-webkit-keyframes marquee {
   0% {
-    transform: translate3d(var(--move-initial), 0, 0);
+    transform: translateX(0%);
   }
   100% {
-    transform: translate3d(var(--move-final), 0, 0);
+    transform: translateX(-14%);
   }
 }
 
 @keyframes marquee {
   0% {
-    transform: translate3d(var(--move-initial), 0, 0);
+    transform: translateX(0%);
   }
   100% {
-    transform: translate3d(var(--move-final), 0, 0);
+    transform: translateX(-14%);
   }
 }
 .hero {

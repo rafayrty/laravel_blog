@@ -1,7 +1,7 @@
 footer{
     background:$black;
     color:#fff;
-    overflow: hidden;
+    // overflow: hidden;
     margin-top:6rem;
     position: relative;
     // padding:1rem;
@@ -13,24 +13,17 @@ footer{
 
     .footer-marquee{
         position: relative;
-        overflow: hidden;
-        --offset: 20vw;
-        --move-initial: calc(-25% + var(--offset));
-        --move-final: calc(-50% + var(--offset));
-        @include media(">=desktop") {
-            --offset:1vw;
-        }
+
        ul{
-        width:300vw;
-        display: flex;
-        // position: absolute;
-        transform: translate3d(var(--move-initial), 0, 0);
-        animation: marquee 5s linear infinite;
-        // animation-play-state: paused;
+            position:absolute;
+            width:400%;
+            overflow-x:auto;
+            display: flex;
             margin:0;
             padding:0;
-
             list-style: none;
+            animation:marquee forwards infinite 15s linear;
+
             li{
                 font-family:'SF Pro Text';
                 font-size: 4vw;
@@ -38,6 +31,9 @@ footer{
                 text-transform: uppercase;
                 @include media(">=desktop") {
                     font-size:1.6vw;
+                }
+                @include media(">=desktop") {
+                    font-size:1.1vw;
                 }
             }
             li strong{
@@ -120,10 +116,12 @@ footer{
 
 @keyframes marquee {
     0% {
-        transform: translate3d(var(--move-initial), 0, 0);
+        transform: translateX(0%);
+        // transform: translate3d(var(--move-initial), 0, 0);
     }
 
     100% {
-        transform: translate3d(var(--move-final), 0, 0);
+        transform:translateX(-14%);
+        // transform: translate3d(var(--move-final), 0, 0);
     }
 }

@@ -2,16 +2,28 @@
 
 
     <div class="footer-marquee">
-        <ul aria-hidden="true">
-            <li><strong>UX design</strong></li>
-            <li>Distributed teams</li>
-            <li><strong>Creativity</strong></li>
-            <li>Strategy</li>
-            <li><strong>Suspense</strong></li>
-            <li>Growth</li>
-            <li><strong>Digital product design</strong></li>
-            <li>Remote work</li>
-        </ul>
+        <div class="marquee__inner-wrap">
+                <ul class="marquee__inner" aria-hidden="true">
+                    <li><strong>UX design</strong></li>
+                    <li>Distributed teams</li>
+                    <li><strong>Creativity</strong></li>
+                    <li>Strategy</li>
+                    <li><strong>Suspense</strong></li>
+                    <li>Growth</li>
+                    <li><strong>Digital product design</strong></li>
+                    <li>Remote work</li>
+                    <!-- Second Form -->
+                    <li><strong>UX design</strong></li>
+                    <li>Distributed teams</li>
+                    <li><strong>Creativity</strong></li>
+                    <li>Strategy</li>
+                    <li><strong>Suspense</strong></li>
+                    <li>Growth</li>
+                    <li><strong>Digital product design</strong></li>
+                    <li>Remote work</li>
+                </ul>
+        </div>
+
     </div>
 
 
