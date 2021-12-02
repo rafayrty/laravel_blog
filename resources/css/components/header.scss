@@ -9,7 +9,7 @@ header{
 
 .header-container{
 
-    @include container-width;
+    @include header-width;
 
     display:flex;
     justify-content: space-between;
@@ -26,4 +26,80 @@ header{
     cursor: pointer;
     margin:0;
     padding:0;
+
+    @include media(">=desktop") {
+        display:none;
+    }
+}
+.header-container .menu{
+    display:none;
+
+    @include media(">=desktop") {
+        display:block;
+    }
+
+    ul{
+        list-style:none;
+        display:flex;
+        li{
+            font-size:1.4rem;
+            font-weight:500;
+            font-family:'New York Small',sans-serif;
+            position:relative;
+            a{
+                color:inherit;
+                text-decoration: none;
+            }
+            &:hover{
+                &::before{
+                    animation:fadeInUp forwards .3s ease-in-out;
+                }
+            }
+            &::before{
+                opacity:0;
+
+                content:"";
+                position:absolute;
+                width:100%;
+                background:#000;
+                height: 0.15rem;
+                bottom: -178%;
+                left:0;
+                right:0;
+            }
+
+
+        }
+        li.active{
+            &::after{
+                opacity:1;
+                content:"";
+                position:absolute;
+                width:100%;
+                background:#000;
+                height: 0.15rem;
+                bottom: -178%;
+                left:0;
+                right:0;
+            }
+        }
+        
+        li:not(:first-child){
+            margin-left:3rem;
+        }
+    }
+}
+
+
+@keyframes fadeInUp{
+
+    from{
+        opacity:0;
+        transform:translateY(-20%);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+
 }

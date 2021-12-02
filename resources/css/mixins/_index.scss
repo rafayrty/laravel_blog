@@ -1,4 +1,29 @@
-@mixin container-width {
+@mixin header-width {
     max-width:91%;
     margin:0 auto;
+    @include media(">=desktop_md") {
+      max-width:88%;
+    }
+    @include media(">=desktop_lg") {
+      max-width:85%;
+    }
+}
+
+@mixin container-width {
+  max-width:91%;
+  margin:0 auto;
+  @include media('>=tablet'){
+    max-width:80%;
   }
+  @include media(">=desktop") {
+    max-width:70%;
+  }
+  @include media(">=desktop_md") {
+    max-width:60%;
+  }
+  @include media(">=desktop_lg") {
+    max-width:50%;
+  }
+
+
+}

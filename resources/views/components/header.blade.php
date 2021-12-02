@@ -31,6 +31,15 @@
     </svg>
     
     </div>
+
+    <div class="menu">
+        <ul>
+            <li class="active"><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Links</a></li>
+            <li><a href="#">Projects</a></li>
+        </ul>
+    </div>
 </div>
 
 </header>
