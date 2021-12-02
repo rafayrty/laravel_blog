@@ -1,7 +1,7 @@
 footer{
     background:$black;
     color:#fff;
-    // overflow: hidden;
+    overflow: hidden;
     margin-top:6rem;
     position: relative;
     // padding:1rem;
@@ -16,14 +16,17 @@ footer{
 
        ul{
             position:absolute;
-            width:400%;
+            width:600%;
             overflow-x:auto;
             display: flex;
+            align-items: center;
             margin:0;
             padding:0;
             list-style: none;
             animation:marquee forwards infinite 15s linear;
-
+            @include media(">=desktop"){
+                width:400%;
+            }
             li{
                 font-family:'SF Pro Text';
                 font-size: 4vw;
@@ -32,7 +35,7 @@ footer{
                 @include media(">=desktop") {
                     font-size:1.6vw;
                 }
-                @include media(">=desktop") {
+                @include media(">=desktop_md") {
                     font-size:1.1vw;
                 }
             }

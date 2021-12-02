@@ -598,6 +598,7 @@ header {
 footer {
   background: #000000;
   color: #fff;
+  overflow: hidden;
   margin-top: 6rem;
   position: relative;
   padding-top: 1rem;
@@ -610,14 +611,20 @@ footer .footer-marquee {
 }
 footer .footer-marquee ul {
   position: absolute;
-  width: 400%;
+  width: 600%;
   overflow-x: auto;
   display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
   -webkit-animation: marquee forwards infinite 15s linear;
           animation: marquee forwards infinite 15s linear;
+}
+@media (min-width: 1024px) {
+  footer .footer-marquee ul {
+    width: 400%;
+  }
 }
 footer .footer-marquee ul li {
   font-family: "SF Pro Text";
@@ -630,7 +637,7 @@ footer .footer-marquee ul li {
     font-size: 1.6vw;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1600px) {
   footer .footer-marquee ul li {
     font-size: 1.1vw;
   }
