@@ -12,6 +12,7 @@ header{
     @include header-width;
 
     display:flex;
+    position: relative;
     justify-content: space-between;
     align-items: center;
 }
@@ -33,14 +34,35 @@ header{
 }
 .header-container .menu{
     display:none;
+    //For Animation Only
+    opacity:0;
 
+    //Animation Ends
+    position: absolute;
+    width: 115%;
+    left: -7%;
+    right: 0%;
+    background: #fff;
+    top: 183%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     @include media(">=desktop") {
         display:block;
+        position: static;
+        width:auto;
+        opacity:1;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px;
     }
 
     ul{
         list-style:none;
         display:flex;
+        flex-direction: column;
+        margin:0;
+        padding:1.2rem 2rem;
+        @include media(">=desktop") {
+            flex-direction: row;
+        }
+        
         li{
             font-size:1.4rem;
             font-weight:500;
@@ -55,6 +77,8 @@ header{
                     animation:fadeInUp forwards .3s ease-in-out;
                 }
             }
+            @include media(">=desktop") {
+
             &::before{
                 opacity:0;
 
@@ -62,11 +86,12 @@ header{
                 position:absolute;
                 width:100%;
                 background:#000;
-                height: 0.15rem;
-                bottom: -178%;
+                height: 0.16rem;
+                bottom: -188%;
                 left:0;
                 right:0;
             }
+        }
 
 
         }
@@ -78,19 +103,37 @@ header{
                 width:100%;
                 background:#000;
                 height: 0.15rem;
-                bottom: -178%;
+                bottom: -38%;
+                left:0;
+                right:0;
+            }
+            @include media(">=desktop") {
+
+            &::after{
+                opacity:1;
+                content:"";
+                position:absolute;
+                width:100%;
+                background:#000;
+                height: 0.15rem;
+                bottom: -186%;
                 left:0;
                 right:0;
             }
         }
-        
+        }
+        li:not(:first-child){
+            margin-top:1rem;
+        }
+        @include media(">=desktop") {
         li:not(:first-child){
             margin-left:3rem;
+            margin-top:0;
         }
     }
+
+    }
 }
-
-
 @keyframes fadeInUp{
 
     from{
