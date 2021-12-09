@@ -1,5 +1,6 @@
 {
     "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
     "/images/article1.jpg": "/images/article1.jpg",
     "/images/article2.jpg": "/images/article2.jpg",
     "/images/article3.jpg": "/images/article3.jpg",
@@ -7,5 +8,5 @@
     "/images/article5.jpg": "/images/article5.jpg",
     "/images/article6.jpg": "/images/article6.jpg",
     "/images/img1.jpg": "/images/img1.jpg",
-    "/css/app.css": "/css/app.css"
+    "/images/avatar.jpg": "/images/avatar.jpg"
 }

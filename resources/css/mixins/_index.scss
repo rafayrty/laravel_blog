@@ -1,29 +1,66 @@
 @mixin header-width {
-    max-width:91%;
-    margin:0 auto;
+    max-width: 91%;
+    margin: 0 auto;
+
     @include media(">=desktop_md") {
-      max-width:88%;
+        max-width: 88%;
     }
+
     @include media(">=desktop_lg") {
-      max-width:85%;
+        max-width: 85%;
     }
 }
 
 @mixin container-width {
-  max-width:91%;
-  margin:0 auto;
-  @include media('>=tablet'){
+    max-width: 91%;
+    margin: 0 auto;
+
+    @include media('>=tablet') {
+        max-width: 80%;
+    }
+
+    @include media(">=desktop") {
+        max-width: 70%;
+    }
+
+    @include media(">=desktop_md") {
+        max-width: 60%;
+    }
+
+    @include media(">=desktop_lg") {
+        max-width: 50%;
+    }
+
+
+}
+
+// Font Mixin
+
+@mixin hero-heading {
+    font-family: 'New York Extra Large Bold';
+    font-size: 2.25rem;
+    line-height: 1.3;
+
+    @include media(">=desktop") {
+        font-size: 2.8rem;
+        line-height: 1.1;
+
+    }
+
+    @include media(">=desktop_md") {
+        font-size: 3.375rem;
+        line-height: 1.1;
+
+    }
+
+
+}
+
+@mixin  hero-text{
+  font-family: 'SFMono';
+  
+  @include media('>=desktop'){
     max-width:80%;
-  }
-  @include media(">=desktop") {
-    max-width:70%;
-  }
-  @include media(">=desktop_md") {
-    max-width:60%;
-  }
-  @include media(">=desktop_lg") {
-    max-width:50%;
-  }
-
-
+    margin:0 auto;
+}
 }

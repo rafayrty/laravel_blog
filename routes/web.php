@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Frontend\HomeController;
+use App\Http\Controllers\Frontend\ArticlesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,4 @@ use App\Http\Controllers\Frontend\HomeController;
 
 
 Route::get('/', [HomeController::class, 'index']);
+Route::get('/article/{slug}', [ArticlesController::class, 'index'])->name('article.index');

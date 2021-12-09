@@ -1,0 +1,66 @@
+
+
+main{
+
+
+    .article-container{
+        @include container-width;
+
+        .article-hero{
+                .hero-text{
+                    h1{
+                        text-align:center;
+                        @include hero-heading;
+                    }
+                    p{
+                        text-align: center;
+                        @include hero-text;
+                    }
+            }
+            .hero-img{
+                margin-left:calc(50% - 50vw);
+                margin-right:calc(50% - 50vw);
+                margin-top:2.1rem;
+                img{
+                    width:100%;
+        
+                }
+            }
+            hr{
+                margin-top:1.1rem;
+                border:1px solid #000;
+            }
+        }
+
+
+        .article-author{
+            display:flex;
+            align-items: center;
+            .avatar{
+                img{
+                    width:56px;
+                    height:56px;
+                    object-fit: cover;
+                    border-radius:50px;
+                }
+            }
+            .author-info{
+                margin-left:1rem;
+                margin-top:1.1rem;
+                p{
+                    margin:0;
+                }
+                p.name{
+                    font-weight:700;
+                    text-transform: uppercase;
+                }
+                .read{
+                    margin-top:.4rem;
+                }
+            }
+          
+
+        }
+    }
+
+}

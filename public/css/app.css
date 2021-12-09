@@ -795,9 +795,9 @@ footer .footer-container .footer__credits p {
 }
 
 .hero .hero-text h1 {
+  text-align: center;
   font-family: "New York Extra Large Bold";
   font-size: 2.25rem;
-  text-align: center;
   line-height: 1.3;
 }
 @media (min-width: 1024px) {
@@ -815,8 +815,8 @@ footer .footer-container .footer__credits p {
 
 .hero .hero-text p {
   margin-top: 2rem;
-  font-family: "SFMono";
   text-align: center;
+  font-family: "SFMono";
 }
 @media (min-width: 1024px) {
   .hero .hero-text p {
@@ -917,6 +917,96 @@ footer .footer-container .footer__credits p {
   font-weight: 500;
   font-size: 1.4rem;
   text-align: center;
+}
+
+main .article-container {
+  max-width: 91%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  main .article-container {
+    max-width: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  main .article-container {
+    max-width: 70%;
+  }
+}
+@media (min-width: 1600px) {
+  main .article-container {
+    max-width: 60%;
+  }
+}
+@media (min-width: 1860px) {
+  main .article-container {
+    max-width: 50%;
+  }
+}
+main .article-container .article-hero .hero-text h1 {
+  text-align: center;
+  font-family: "New York Extra Large Bold";
+  font-size: 2.25rem;
+  line-height: 1.3;
+}
+@media (min-width: 1024px) {
+  main .article-container .article-hero .hero-text h1 {
+    font-size: 2.8rem;
+    line-height: 1.1;
+  }
+}
+@media (min-width: 1600px) {
+  main .article-container .article-hero .hero-text h1 {
+    font-size: 3.375rem;
+    line-height: 1.1;
+  }
+}
+main .article-container .article-hero .hero-text p {
+  text-align: center;
+  font-family: "SFMono";
+}
+@media (min-width: 1024px) {
+  main .article-container .article-hero .hero-text p {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+main .article-container .article-hero .hero-img {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-top: 2.1rem;
+}
+main .article-container .article-hero .hero-img img {
+  width: 100%;
+}
+main .article-container .article-hero hr {
+  margin-top: 1.1rem;
+  border: 1px solid #000;
+}
+main .article-container .article-author {
+  display: flex;
+  align-items: center;
+}
+main .article-container .article-author .avatar img {
+  width: 56px;
+  height: 56px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50px;
+}
+main .article-container .article-author .author-info {
+  margin-left: 1rem;
+  margin-top: 1.1rem;
+}
+main .article-container .article-author .author-info p {
+  margin: 0;
+}
+main .article-container .article-author .author-info p.name {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+main .article-container .article-author .author-info .read {
+  margin-top: 0.4rem;
 }
 
 html {

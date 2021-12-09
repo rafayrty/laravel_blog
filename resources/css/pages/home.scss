@@ -20,30 +20,18 @@
     margin-top:2.4rem;
 }
 .hero .hero-text h1{
-    font-family: 'New York Extra Large Bold';
-    font-size:2.25rem;
     text-align: center;
-    line-height:1.3;
-    @include media(">=desktop") {
-        font-size:2.8rem;
-        line-height: 1.1;
+    @include hero-heading;
 
-    }
-    @include media(">=desktop_md") {
-        font-size:3.375rem;
-        line-height: 1.1;
 
-    }
 
 }
 .hero .hero-text p{
     margin-top:2rem;
-    font-family: 'SFMono';
     text-align: center;
-    @include media('>=desktop'){
-        max-width:80%;
-        margin:0 auto;
-    }
+    @include hero-text;
+
+
 }
 .hero-container hr{
     margin-top:3.2rem;
