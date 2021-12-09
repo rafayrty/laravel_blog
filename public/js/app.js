@@ -2079,13 +2079,22 @@ var Menu = /*#__PURE__*/function () {
     _classCallCheck(this, Menu);
 
     this.icon = document.querySelector(".menu-icon");
+    this.toggle = false;
     this.listeners();
   }
 
   _createClass(Menu, [{
     key: "listeners",
     value: function listeners() {
-      this.icon.addEventListener("click", this.open.bind());
+      var _this = this;
+
+      this.icon.addEventListener("click", function () {
+        if (_this.toggle == false) {
+          _this.open();
+        } else {
+          _this.close();
+        }
+      });
     }
   }, {
     key: "open",
@@ -2098,6 +2107,20 @@ var Menu = /*#__PURE__*/function () {
         autoAlpha: 1,
         ease: "power4.easeInOut"
       });
+      this.toggle = true;
+    }
+  }, {
+    key: "close",
+    value: function close() {
+      var tl = gsap__WEBPACK_IMPORTED_MODULE_0__["default"].timeline();
+      tl.to(".menu", {
+        autoAlpha: 0,
+        ease: "power4.easeInOut"
+      });
+      tl.set(".menu", {
+        display: 'none'
+      });
+      this.toggle = false;
     }
   }]);
 

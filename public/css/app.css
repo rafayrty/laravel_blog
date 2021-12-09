@@ -1027,6 +1027,10 @@ main .article-container .article-hero hr {
 }
 main .article-container .article-author {
   display: flex;
+  flex-direction: column;
+}
+main .article-container .article-author .left {
+  display: flex;
   align-items: center;
 }
 main .article-container .article-author .avatar img {
@@ -1038,17 +1042,43 @@ main .article-container .article-author .avatar img {
 }
 main .article-container .article-author .author-info {
   margin-left: 1rem;
-  margin-top: 1.1rem;
+  font-size: 0.85rem;
 }
 main .article-container .article-author .author-info p {
   margin: 0;
 }
 main .article-container .article-author .author-info p.name {
-  font-weight: 700;
+  font-family: "SF Pro Text";
+  font-weight: 600;
   text-transform: uppercase;
 }
 main .article-container .article-author .author-info .read {
   margin-top: 0.4rem;
+}
+main .article-container .article-author .author-socials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  justify-content: space-around;
+  align-items: center;
+  border-left: 1px solid #EAEAEA;
+  margin-top: 1rem;
+}
+main .article-container .article-author .author-socials .social-link {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+main .article-container .article-author .author-socials .social-link:not(:first-child) {
+  border-left: 1px solid #EAEAEA;
+}
+main .article-container .article-author .author-socials a {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  display: block;
 }
 
 html {
