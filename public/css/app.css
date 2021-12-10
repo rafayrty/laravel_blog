@@ -1028,6 +1028,7 @@ main .article-container .article-hero hr {
 main .article-container .article-author {
   display: flex;
   flex-direction: column;
+  margin-top: 1.5rem;
 }
 main .article-container .article-author .left {
   display: flex;
@@ -1062,23 +1063,154 @@ main .article-container .article-author .author-socials {
   border-radius: 4px;
   justify-content: space-around;
   align-items: center;
-  border-left: 1px solid #EAEAEA;
-  margin-top: 1rem;
+  border: 1px solid #EAEAEA;
+  margin-top: 1.5rem;
+  overflow: hidden;
 }
 main .article-container .article-author .author-socials .social-link {
-  padding: 1rem 0;
   display: flex;
   justify-content: center;
 }
+main .article-container .article-author .author-socials .social-link svg path {
+  fill: #000;
+}
 main .article-container .article-author .author-socials .social-link:not(:first-child) {
   border-left: 1px solid #EAEAEA;
+}
+main .article-container .article-author .author-socials .social-link:hover {
+  background: #000;
+}
+main .article-container .article-author .author-socials .social-link:hover svg path {
+  fill: #fff;
 }
 main .article-container .article-author .author-socials a {
   margin: 0;
   padding: 0;
   text-align: center;
   width: 100%;
+  padding: 1rem 0;
   display: block;
+}
+main .article-container .article-content p {
+  font-family: "New York";
+  font-weight: 500;
+}
+main .article-container .article-content h2 {
+  font-family: "SF Pro Display";
+}
+main .article-container .article-content__img {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+main .article-container .article-content__img img {
+  width: 100%;
+}
+main .article-container .article-content__img p.caption {
+  padding: 0.5rem 0;
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
+  font-family: "SF Pro Text";
+}
+main .article-container .shareables {
+  margin-top: 2rem;
+}
+main .article-container .shareables #share-text {
+  font-family: "SF Pro Text";
+  margin: 0;
+  padding: 0;
+  padding-bottom: 0.6rem;
+}
+main .article-container .shareables-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #EAEAEA;
+  overflow: hidden;
+}
+main .article-container .shareables-container .shareable-link {
+  display: flex;
+  justify-content: center;
+}
+main .article-container .shareables-container .shareable-link svg path {
+  fill: #000;
+}
+main .article-container .shareables-container .shareable-link:not(:first-child) {
+  border-left: 1px solid #EAEAEA;
+}
+main .article-container .shareables-container .shareable-link:hover {
+  background: #000;
+  color: #fff;
+}
+main .article-container .shareables-container .shareable-link:hover svg path {
+  fill: #fff;
+}
+main .article-container .shareables-container .shareable-link:hover a {
+  color: #fff;
+}
+main .article-container .shareables-container a {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  padding: 1rem 0;
+  display: block;
+  text-decoration: none;
+}
+main .article-container .shareables-container a span {
+  display: none;
+}
+main .article-container .article-tags {
+  display: flex;
+  align-items: center;
+  margin-top: 0.6rem;
+}
+main .article-container .article-tags .tags {
+  font-family: "SF Pro Text";
+  font-weight: 500;
+}
+main .article-container .article-tags .tags-list {
+  margin-left: 0.4rem;
+}
+main .article-container .article-tags .tags-list a {
+  color: #000;
+}
+main .article-container .article-tags .tags-list a span {
+  margin: 0;
+  padding: 0;
+}
+main .article-container .author-description {
+  display: flex;
+  align-items: center;
+  border-top: 1px dotted #000;
+  padding: 1.5rem 0;
+  margin-top: 0.6rem;
+}
+main .article-container .author-description .avatar img {
+  width: 56px;
+  height: 56px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50px;
+}
+main .article-container .author-description p {
+  margin: 0;
+  padding: 0;
+  margin-left: 1.1rem;
+  font-family: "New York";
+  font-weight: 500;
+}
+main .article-container .author-description p strong {
+  font-family: "SF Pro Text";
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 html {
