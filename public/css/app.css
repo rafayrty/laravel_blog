@@ -699,12 +699,12 @@ footer .footer-container {
 }
 @media (min-width: 1024px) {
   footer .footer-container {
-    max-width: 70%;
+    max-width: 60%;
   }
 }
 @media (min-width: 1600px) {
   footer .footer-container {
-    max-width: 60%;
+    max-width: 55%;
   }
 }
 @media (min-width: 1860px) {
@@ -788,6 +788,113 @@ footer .footer-container .footer__credits p {
     transform: translateX(-14%);
   }
 }
+.news-letter-form {
+  border: 1px solid #000;
+  text-align: center;
+  padding: 2.8rem 2.5rem;
+  padding-bottom: 2.8rem;
+  position: relative;
+}
+@media (min-width: 1024px) {
+  .news-letter-form {
+    padding: 2.8rem 3.2rem;
+  }
+}
+.news-letter-form:before {
+  content: "";
+  height: 0.5rem;
+  width: 100%;
+  position: absolute;
+  background: #000;
+  top: -5%;
+  left: 0;
+  right: 0;
+}
+@media (min-width: 768px) {
+  .news-letter-form {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1024px) {
+  .news-letter-form {
+    max-width: 76%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1860px) {
+  .news-letter-form {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+}
+.news-letter-form h1 {
+  font-family: "New York Extra Large Bold", sans-serif;
+  font-size: 1.8rem;
+  margin: 0;
+}
+@media (min-width: 1024px) {
+  .news-letter-form h1 {
+    font-size: 2.25rem;
+  }
+}
+.news-letter-form p {
+  font-family: "SF Pro Text";
+  margin: 0;
+  padding: 0;
+  padding: 1rem 0;
+}
+@media (min-width: 1600px) {
+  .news-letter-form p {
+    font-size: 1.25rem;
+  }
+}
+.news-letter-form form {
+  margin-top: 0.82rem;
+}
+.news-letter-form form .email-input {
+  display: flex;
+}
+.news-letter-form form .email-input input {
+  width: 100%;
+  border: 1px solid #000;
+  font-family: "SF Pro Text";
+  padding: 0.75rem 0.5rem;
+  border-radius: 0;
+}
+.news-letter-form form .email-input input::-moz-placeholder {
+  opacity: 1;
+  color: #000;
+}
+.news-letter-form form .email-input input:-ms-input-placeholder {
+  opacity: 1;
+  color: #000;
+}
+.news-letter-form form .email-input input::placeholder {
+  opacity: 1;
+  color: #000;
+}
+.news-letter-form form .email-input button[type=submit] {
+  background: #000;
+  color: #fff;
+  font-family: "SF Pro Text";
+  border: none;
+  flex-basis: 50%;
+  padding: 0.75rem 0;
+  border: 1px solid #000;
+  font-weight: 500;
+}
+@media (min-width: 1024px) {
+  .news-letter-form form .email-input button[type=submit] {
+    flex-basis: 30%;
+  }
+}
+.news-letter-form form .email-input button[type=submit]:hover {
+  cursor: pointer;
+  background: #FFF;
+  color: #000;
+}
+
 .hero {
   margin-top: 4rem;
 }
@@ -803,18 +910,22 @@ footer .footer-container .footer__credits p {
 }
 @media (min-width: 1024px) {
   .hero-container {
-    max-width: 70%;
+    max-width: 60%;
   }
 }
 @media (min-width: 1600px) {
   .hero-container {
-    max-width: 60%;
+    max-width: 55%;
   }
 }
 @media (min-width: 1860px) {
   .hero-container {
     max-width: 50%;
   }
+}
+.hero-container a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .hero .hero-img {
@@ -892,12 +1003,12 @@ footer .footer-container .footer__credits p {
 }
 @media (min-width: 1024px) {
   .articles-container {
-    max-width: 70%;
+    max-width: 60%;
   }
 }
 @media (min-width: 1600px) {
   .articles-container {
-    max-width: 60%;
+    max-width: 55%;
   }
 }
 @media (min-width: 1860px) {
@@ -972,12 +1083,12 @@ main .article-container {
 }
 @media (min-width: 1024px) {
   main .article-container {
-    max-width: 70%;
+    max-width: 60%;
   }
 }
 @media (min-width: 1600px) {
   main .article-container {
-    max-width: 60%;
+    max-width: 55%;
   }
 }
 @media (min-width: 1860px) {
@@ -1030,9 +1141,19 @@ main .article-container .article-author {
   flex-direction: column;
   margin-top: 1.5rem;
 }
+@media (min-width: 1024px) {
+  main .article-container .article-author {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 main .article-container .article-author .left {
   display: flex;
   align-items: center;
+}
+main .article-container .article-author .right {
+  flex-basis: 20%;
 }
 main .article-container .article-author .avatar img {
   width: 56px;
@@ -1067,6 +1188,11 @@ main .article-container .article-author .author-socials {
   margin-top: 1.5rem;
   overflow: hidden;
 }
+@media (min-width: 1024px) {
+  main .article-container .article-author .author-socials {
+    margin-top: 0rem;
+  }
+}
 main .article-container .article-author .author-socials .social-link {
   display: flex;
   justify-content: center;
@@ -1091,6 +1217,14 @@ main .article-container .article-author .author-socials a {
   padding: 1rem 0;
   display: block;
 }
+@media (min-width: 1024px) {
+  main .article-container .article-author .author-socials a {
+    padding: 0.5rem 0;
+  }
+}
+main .article-container .article-content {
+  margin-top: 2rem;
+}
 main .article-container .article-content p {
   font-family: "New York";
   font-weight: 500;
@@ -1103,6 +1237,12 @@ main .article-container .article-content__img {
   margin-right: calc(50% - 50vw);
   padding-top: 1.5rem;
   padding-bottom: 1rem;
+}
+@media (min-width: 1024px) {
+  main .article-container .article-content__img {
+    margin-left: calc(10% - 10vw);
+    margin-right: calc(10% - 10vw);
+  }
 }
 main .article-container .article-content__img img {
   width: 100%;
@@ -1161,11 +1301,18 @@ main .article-container .shareables-container a {
   text-align: center;
   width: 100%;
   padding: 1rem 0;
-  display: block;
   text-decoration: none;
+  color: inherit;
+  justify-content: center;
 }
 main .article-container .shareables-container a span {
   display: none;
+}
+@media (min-width: 1024px) {
+  main .article-container .shareables-container a span {
+    display: block;
+    margin-left: 0.5rem;
+  }
 }
 main .article-container .article-tags {
   display: flex;
@@ -1203,6 +1350,7 @@ main .article-container .author-description .avatar img {
 main .article-container .author-description p {
   margin: 0;
   padding: 0;
+  font-size: 0.85rem;
   margin-left: 1.1rem;
   font-family: "New York";
   font-weight: 500;
@@ -1211,6 +1359,99 @@ main .article-container .author-description p strong {
   font-family: "SF Pro Text";
   font-weight: 600;
   text-transform: uppercase;
+}
+main .eyes-border {
+  margin-top: 4rem;
+  position: relative;
+  text-align: center;
+}
+main .eyes-border hr {
+  background: #000;
+  height: 1.4px;
+}
+main .eyes-border .eyes-svg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -800%;
+}
+main .read-next-container {
+  max-width: 91%;
+  margin: 0 auto;
+  margin-top: 3.5rem;
+}
+@media (min-width: 768px) {
+  main .read-next-container {
+    max-width: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  main .read-next-container {
+    max-width: 60%;
+  }
+}
+@media (min-width: 1600px) {
+  main .read-next-container {
+    max-width: 55%;
+  }
+}
+@media (min-width: 1860px) {
+  main .read-next-container {
+    max-width: 50%;
+  }
+}
+main .read-next-container .read-next .heading {
+  text-align: center;
+  font-family: "New York Extra Large Bold", sans-serif;
+  font-size: 2.75rem;
+}
+main .articles-container.read-container {
+  max-width: 100%;
+}
+@media (min-width: 768px) {
+  main .articles-container.read-container .articles__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.8rem;
+  }
+}
+@media (min-width: 1024px) {
+  main .articles-container.read-container .articles__list {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
+  }
+}
+@media (min-width: 1860px) {
+  main .articles-container.read-container .articles__list {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+  }
+}
+main .news-letter-container {
+  padding: 4rem 0;
+  padding-bottom: 0;
+  max-width: 91%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  main .news-letter-container {
+    max-width: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  main .news-letter-container {
+    max-width: 60%;
+  }
+}
+@media (min-width: 1600px) {
+  main .news-letter-container {
+    max-width: 55%;
+  }
+}
+@media (min-width: 1860px) {
+  main .news-letter-container {
+    max-width: 50%;
+  }
 }
 
 html {

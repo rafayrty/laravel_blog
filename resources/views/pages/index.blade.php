@@ -9,11 +9,19 @@
 
         <div class="hero">
             <div class="hero-img">
-                <img src="{{asset('images/img1.jpg')}}" alt="hero-image">
+
+                <a href="{{route('article.index',"how-modern-remote")}}">
+                    <img src="{{asset('images/img1.jpg')}}" alt="hero-image">
+                </a>
+
             </div>
 
             <div class="hero-text">
-                <h1>A few words about this blog platform, Ghost, and how this site was made</h1>
+
+                <a href="{{route('article.index',"how-modern-remote")}}">
+                    <h1>A few words about this blog platform, Ghost, and how this site was made</h1>
+                </a>
+
                 <p>
                     Why Ghost (& Figma) instead of Medium, WordPress or other options?
                 </p>
