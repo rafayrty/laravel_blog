@@ -130,10 +130,16 @@ main{
             p{
                 font-family: 'New York';
                 font-weight:500;
+
+                @include media(">=desktop"){
+                    font-size:1.25rem;
+                }
             }
             h2{
                 font-family: 'SF Pro Display';
-
+                @include media(">=desktop"){
+                    font-size:2rem;
+                }
             }
             &__img{
                 margin-left: calc(50% - 50vw);
@@ -273,6 +279,9 @@ main{
             padding:0;
             font-size:.85rem;
             margin-left:1.1rem;
+            @include media(">=desktop"){
+                font-size:1rem;
+            }
             strong{
                 font-family:'SF Pro Text';
                 font-weight:600;

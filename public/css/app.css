@@ -699,17 +699,17 @@ footer .footer-container {
 }
 @media (min-width: 1024px) {
   footer .footer-container {
-    max-width: 60%;
+    max-width: 58%;
   }
 }
 @media (min-width: 1600px) {
   footer .footer-container {
-    max-width: 55%;
+    max-width: 52%;
   }
 }
 @media (min-width: 1860px) {
   footer .footer-container {
-    max-width: 50%;
+    max-width: 45%;
   }
 }
 footer .footer-container .footer__info {
@@ -910,17 +910,17 @@ footer .footer-container .footer__credits p {
 }
 @media (min-width: 1024px) {
   .hero-container {
-    max-width: 60%;
+    max-width: 58%;
   }
 }
 @media (min-width: 1600px) {
   .hero-container {
-    max-width: 55%;
+    max-width: 52%;
   }
 }
 @media (min-width: 1860px) {
   .hero-container {
-    max-width: 50%;
+    max-width: 45%;
   }
 }
 .hero-container a {
@@ -1003,17 +1003,17 @@ footer .footer-container .footer__credits p {
 }
 @media (min-width: 1024px) {
   .articles-container {
-    max-width: 60%;
+    max-width: 58%;
   }
 }
 @media (min-width: 1600px) {
   .articles-container {
-    max-width: 55%;
+    max-width: 52%;
   }
 }
 @media (min-width: 1860px) {
   .articles-container {
-    max-width: 50%;
+    max-width: 45%;
   }
 }
 
@@ -1083,17 +1083,17 @@ main .article-container {
 }
 @media (min-width: 1024px) {
   main .article-container {
-    max-width: 60%;
+    max-width: 58%;
   }
 }
 @media (min-width: 1600px) {
   main .article-container {
-    max-width: 55%;
+    max-width: 52%;
   }
 }
 @media (min-width: 1860px) {
   main .article-container {
-    max-width: 50%;
+    max-width: 45%;
   }
 }
 main .article-container .article-hero .hero-text h1 {
@@ -1229,8 +1229,18 @@ main .article-container .article-content p {
   font-family: "New York";
   font-weight: 500;
 }
+@media (min-width: 1024px) {
+  main .article-container .article-content p {
+    font-size: 1.25rem;
+  }
+}
 main .article-container .article-content h2 {
   font-family: "SF Pro Display";
+}
+@media (min-width: 1024px) {
+  main .article-container .article-content h2 {
+    font-size: 2rem;
+  }
 }
 main .article-container .article-content__img {
   margin-left: calc(50% - 50vw);
@@ -1355,6 +1365,11 @@ main .article-container .author-description p {
   font-family: "New York";
   font-weight: 500;
 }
+@media (min-width: 1024px) {
+  main .article-container .author-description p {
+    font-size: 1rem;
+  }
+}
 main .article-container .author-description p strong {
   font-family: "SF Pro Text";
   font-weight: 600;
@@ -1387,17 +1402,17 @@ main .read-next-container {
 }
 @media (min-width: 1024px) {
   main .read-next-container {
-    max-width: 60%;
+    max-width: 58%;
   }
 }
 @media (min-width: 1600px) {
   main .read-next-container {
-    max-width: 55%;
+    max-width: 52%;
   }
 }
 @media (min-width: 1860px) {
   main .read-next-container {
-    max-width: 50%;
+    max-width: 45%;
   }
 }
 main .read-next-container .read-next .heading {
@@ -1440,17 +1455,17 @@ main .news-letter-container {
 }
 @media (min-width: 1024px) {
   main .news-letter-container {
-    max-width: 60%;
+    max-width: 58%;
   }
 }
 @media (min-width: 1600px) {
   main .news-letter-container {
-    max-width: 55%;
+    max-width: 52%;
   }
 }
 @media (min-width: 1860px) {
   main .news-letter-container {
-    max-width: 50%;
+    max-width: 45%;
   }
 }
 

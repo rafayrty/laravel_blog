@@ -20,15 +20,15 @@
     }
 
     @include media(">=desktop") {
-        max-width: 60%;
+        max-width: 58%;
     }
 
     @include media(">=desktop_md") {
-        max-width: 55%;
+        max-width: 52%;
     }
 
     @include media(">=desktop_lg") {
-        max-width: 50%;
+        max-width: 45%;
     }
 
 
