@@ -11,12 +11,26 @@ const mix = require('laravel-mix');
  |
  */
 
+mix.js('resources/js/app.js', 'public/js')
+    .react()
+    .postCss('resources/css/app.css', 'public/css', [
+        require('postcss-import'),
+        require('tailwindcss'),
+        require('autoprefixer'),
+    ])
+    .webpackConfig(require('./webpack.config'));
+
+if (mix.inProduction()) {
+    mix.version();
+}
+
+
 
 mix.copy( 'resources/images', 'public/images' );
 
 
 
-mix.js('resources/js/app.js', 'public/js')
+mix.js('resources/js/frontend/app.js', 'public/js/frontend')
     // .postCss('resources/css/app.css', 'public/css');
 
 mix.browserSync({
@@ -24,5 +38,4 @@ mix.browserSync({
 });
 
 
-mix.sass('resources/css/app.scss', 'public/css')
-    // .sass('resources/sass/admin.sass', 'public/css/admin');
+mix.sass('resources/css/frontend/app.scss', 'public/css/frontend')

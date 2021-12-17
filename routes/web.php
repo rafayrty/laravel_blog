@@ -1,8 +1,12 @@
 <?php
+require __DIR__.'/auth.php'; // Auth Routes
 
+use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Frontend\HomeController;
+use Inertia\Inertia;
+//Controllers
 use App\Http\Controllers\Frontend\ArticlesController;
+use App\Http\Controllers\Frontend\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,10 +19,21 @@ use App\Http\Controllers\Frontend\ArticlesController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
+// Route::get('/admin', function () {
+    // return Inertia::render('Auth/Login', [
+    //     // 'canLogin' => Route::has('login'),
+    //     // 'canRegister' => Route::has('register'),
+    //     // 'laravelVersion' => Application::VERSION,
+    //     // 'phpVersion' => PHP_VERSION,
+    //     // 'canResetPassword' => Route::has('password.request'),
+    //     // 'status' => session('status'),
+    // ]);
 // });
+Route::get('/admin/dashboard', function () {
+    return Inertia::render('Dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
 
 
-Route::get('/', [HomeController::class, 'index']);
-Route::get('/article/{slug}', [ArticlesController::class, 'index'])->name('article.index');
+Route::get('/{slug}',[ArticlesController::class,'index'])->name('article.index');
+Route::get('/',[HomeController::class,'index']);
+

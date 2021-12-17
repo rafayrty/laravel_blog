@@ -1,19 +1,18 @@
 require('./bootstrap');
 
-import Menu from './Menu'
+import React from 'react';
+import { render } from 'react-dom';
+import { createInertiaApp } from '@inertiajs/inertia-react';
+import { InertiaProgress } from '@inertiajs/progress';
 
-class Main{
+const appName = window.document.getElementsByTagName('title')[0]?.innerText || 'Laravel';
 
-    
-    
-    constructor(){
-      this.menuClass = new Menu()
-    }
+createInertiaApp({
+    title: (title) => `${title} - ${appName}`,
+    resolve: (name) => require(`./Pages/${name}`),
+    setup({ el, App, props }) {
+        return render(<App {...props} />, el);
+    },
+});
 
-
-
-}
-
-//Initialize
-
-let obj = new Main();
+InertiaProgress.init({ color: '#4B5563' });
