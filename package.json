@@ -33,6 +33,7 @@
     },
     "dependencies": {
         "gsap": "^3.8.0",
-        "normalize.css": "^8.0.1"
+        "normalize.css": "^8.0.1",
+        "sweetalert2": "^11.3.2"
     }
 }

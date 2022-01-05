@@ -1,5 +1,7 @@
 <?php
 require __DIR__.'/auth.php'; // Auth Routes
+require __DIR__.'/users.php'; // Users CRUD Routes
+
 
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -32,6 +34,22 @@ use App\Http\Controllers\Frontend\HomeController;
 Route::get('/admin/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+//Admin Panel
+
+
+
+// Route::prefix('admin/dashboard')->group(function () {
+
+//     Route::get('/users',function(){
+//     return Inertia::render('Dashboard');
+// });
+
+// })->middleware(['auth', 'verified']);
+
+
+
+
 
 
 Route::get('/{slug}',[ArticlesController::class,'index'])->name('article.index');
